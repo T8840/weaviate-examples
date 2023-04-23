@@ -3,7 +3,7 @@ import helper
 import weaviate
 
 # initiate the Weaviate client
-client = weaviate.Client("http://localhost:8080")
+from .config import client
 client.timeout_config = (3, 200)
 
 # empty schema and create new schema
